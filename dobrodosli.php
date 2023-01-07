@@ -14,10 +14,10 @@ if (!isset($_SESSION['username'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pics.css">
-    <title>Dobrosli</title>
+    <title>Welcome</title>
 </head>
 <body>
-    <?php echo "<h1>Dobrosli " . $_SESSION['username'] ." , ". $_SESSION['email'] ."</h1>"; ?>
+    <?php echo "<h1>Welcome " . $_SESSION['username'] ." , ". $_SESSION['email'] ."</h1>"; ?>
     <a href="logout.php">Logout</a>
     <h2 class="center">Preuzmite svoj omiljeni wallpaper</h2>
     <div class="photo">
