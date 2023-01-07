@@ -1,0 +1,28 @@
+.center {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  color: red;
+}
+
+.gallery {
+  margin: 25px;
+  border: 1px solid white;
+  width: 580px;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
