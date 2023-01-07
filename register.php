@@ -53,12 +53,12 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Registracija</title>
+	<title>Register</title>
 </head>
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Registracija</p>
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Registration</p>
 			<div class="input-group">
 				<input type="text" placeholder="Ime" name="username" value="<?php echo $username; ?>" required>
 			</div>
@@ -72,9 +72,9 @@ if (isset($_POST['submit'])) {
 				<input type="password" placeholder="Potvrdite vasu sifru" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Registruj se</button>
+				<button name="submit" class="btn">Register</button>
 			</div>
-			<p class="login-register-text">imate svoj racun? <a href="index.php">Prijavite se</a>.</p>
+			<p class="login-register-text">Do u have a acc? <a href="index.php">Login</a>.</p>
 		</form>
 	</div>
 </body>
