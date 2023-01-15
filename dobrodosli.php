@@ -19,7 +19,7 @@ if (!isset($_SESSION['username'])) {
 <body>
     <?php echo "<h1>Welcome " . $_SESSION['username'] ." , ". $_SESSION['email'] ."</h1>"; ?>
     <a href="logout.php">Logout</a>
-    <h2 class="center">Preuzmite svoj omiljeni wallpaper</h2>
+    <h2 class="center">Download img for our wallpaper</h2>
     <div class="photo">
       <div class="gallery">
         <a target="_blank" href="./photo/slika_1.jpg">

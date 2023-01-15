@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="container">
 		<form action="" method="POST" class="login-email">
-			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Prijava</p>
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Log in</p>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" required>
 			</div>
@@ -51,9 +51,9 @@ if (isset($_POST['submit'])) {
 				<input type="password" placeholder="Sifra" name="password"  required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Prijava</button>
+				<button name="submit" class="btn">Login in</button>
 			</div>
-			<p class="login-register-text">Nemate svoj racun? <a href="register.php">Registruj se</a>.</p>
+			<p class="login-register-text">Do u have a acc? <a href="register.php">Register</a>.</p>
 		</form>
 	</div>
 </body>
