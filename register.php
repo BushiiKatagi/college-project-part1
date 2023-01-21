@@ -24,20 +24,20 @@ if (isset($_POST['submit'])) {
 					VALUES ('$username', '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
-				echo "<script>alert('Uspjesna registracija.')</script>";
+				echo "<script>alert('Congrations')</script>";
 				$username = "";
 				$email = "";
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {
-				echo "<script>alert('WOOPS! GRESKA.')</script>";
+				echo "<script>alert('WOOPS!')</script>";
 			}
 		} else {
-			echo "<script>alert('Pogresan email.')</script>";
+			echo "<script>alert('False email.')</script>";
 		}
 		
 	} else {
-		echo "<script>alert('Sifra na odgovara.')</script>";
+		echo "<script>alert('Password dont work')</script>";
 	}
 }
 
@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Registration</p>
 			<div class="input-group">
-				<input type="text" placeholder="Name" name="username" value="<?php echo $username; ?>" required>
+				<input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
 			</div>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>

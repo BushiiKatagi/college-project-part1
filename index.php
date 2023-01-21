@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
 		$_SESSION['email'] = $row['email'];
 		header("Location: dobrodosli.php");
 	} else {
-		echo "<script>alert('OPSS! Email pogresno napisan')</script>";
+		echo "<script>alert('OPSS! Fail password or username')</script>";
 	}
 }
 
@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 				<input type="email" placeholder="Email" name="email" required>
 			</div>
 			<div class="input-group">
-				<input type="password" placeholder="Sifra" name="password"  required>
+				<input type="password" placeholder="Password" name="password"  required>
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Login in</button>
